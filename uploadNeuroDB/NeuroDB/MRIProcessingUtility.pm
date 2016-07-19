@@ -277,7 +277,7 @@ sub determinePSC {
     }
     my ($center_name, $centerID) =
     NeuroDB::MRI::getPSC(
-        $identifier},
+        $identifier,
         $this->{dbhr}
     );
     if ($to_log) {
