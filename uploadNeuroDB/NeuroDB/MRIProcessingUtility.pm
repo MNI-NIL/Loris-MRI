@@ -189,9 +189,7 @@ sub determineSubjectID {
         }
     }
 
-    #
-    # 3 params instead of 4
-    #
+    # Check for regular expression in the identifier
     if ($tarchiveInfo->{'PatientName'} =~ /$Settings::regex_pattern/i){
       $identifier = $tarchiveInfo->{'PatientName'};
     }
